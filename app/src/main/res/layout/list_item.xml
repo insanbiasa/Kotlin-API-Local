@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_mahasiswa"
+            android:padding="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvAvatar"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:id="@+id/ivAvatar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/images" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tvNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@id/cvAvatar"
+                android:paddingStart="10dp"
+                android:text="Nama"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvNohp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvNama"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/cvAvatar"
+                android:drawableStart="@drawable/ic_phone2"
+                android:drawablePadding="5dp"
+                android:paddingStart="10dp"
+                android:text="No.Hp"
+                android:textColor="@android:color/black"
+                android:textSize="12dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvNohp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/cvAvatar">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alamat"
+                    android:drawableStart="@drawable/ic_address"
+                    android:paddingStart="10dp"
+                    android:drawablePadding="5dp"
+                    android:layout_weight="1"
+                    android:id="@+id/tvAlamat"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_delete"
+                    android:id="@+id/btnHapus"/>
+
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>
